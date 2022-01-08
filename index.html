@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="nl">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/general.css">
+    <script src="js/location.js"></script>
+    <title>Openbaar VerToer</title>
+
+</head>
+<body>
+
+<div id="overlay" class="overlay">
+    <div class="loader"></div>
+</div>
+
+<nav class="navbar navbar-dark" style="background-color: #5c5c5c;">
+
+    <h1>Openbaar VerToer - Belmundo 2022</h1>
+</nav>
+
+<div class="instructions"><p>Welkom op het GPS-spel van Openbaar VerToer ter gelegenheid van Belmundo 2022!</p>
+    <ul>
+        <li>Indien u de gegidste toer wilt volgen, hoeft u hier niet te zijn</li>
+        <li>Indien u het gps-spel met de bus wil spelen, kan u steeds op het busje rechts bovenaan tikken, om route
+            instructies te verkrijgen.
+        </li>
+        <li>Indien u het gps-spel met de fiets of te voet wil spelen, kan u steeds op het fietsje bovenaan tikken, om
+            route instructies te verkrijgen. Bemerk dat dit dezelfde route als de bus is, en dat u te voet mogelijks
+            onvoldoende tijd heeft om alle standjes te bezichtigen.
+        </li>
+    </ul>
+
+    Het eerste standje bevind zich aan Herberg Macharius. Het spel begint aan deze bushalte daar vlakbij: xxx
+
+    Klik op de knop "Ben ik aan de juiste bushalte?" hieronder om te controleren of de locatie tracking werkt. Indien je
+    een foutmelding krijgt, staan je permissies waarschijnlijk niet juist.
+</div>
+<div style="margin:10px">
+    <div><a onclick="benIkKlaar()" class="btn btn-info">Ben ik aan de juiste bushalte?</a></div>
+    <div id="jeBentKlaar" style="display:none"><p>Ja, je bent aan de bushalte, klaar om te vertrekken!</p>
+
+    </div>
+    <div id="jeBentNietKlaar" style="display:none" class="alert-warning"><p>Als je dit ziet, werkt je GPS, maar sta je nog niet op de juiste
+        plaats om te vertrekken</p></div>
+
+    <br><br>
+    <a href="fase1.html" class="btn btn-warning">Begin het gps-spel!</a> (Enkel klikken als je klaar staat aan de
+    bushalte)
+
+    <br><br>
+
+</div>
+
+<script>
+    function benIkKlaar(){
+   atLocationWithRadius(50.963752, 3.754895 , 0.001, ikBenKlaar);
+    }
+
+    function ikBenKlaar(klaar){
+
+    if(klaar){
+    document.getElementById("jeBentNietKlaar").style.display = "none";
+    document.getElementById("jeBentKlaar").style.display = "block";
+
+    } else {
+    document.getElementById("jeBentKlaar").style.display = "none";
+    document.getElementById("jeBentNietKlaar").style.display = "block";
+    }
+    }
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html> 

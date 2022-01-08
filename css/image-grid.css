@@ -1,0 +1,43 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 320px;
+  margin: 10px;
+   background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+.template{
+width:100px;
+height:200px;
+
+}
+
+.grid-container div{
+border-width:5px;
+border-style: solid;
+border-color:grey;
+}
+
+.imageFound{
+border-color:lime;
+}
+
+#overlayImage{
+height :80%;
+width: auto;
+margin: 10px;
+}
+
+#imageOverlay{
+background-color: rgba(0,0,0,1); /* Black background with opacity */
+    z-index: 1;
+}
+
+#locationChecker{
+display: none;
+}
+
+#completedStage{
+display: none;
+}
