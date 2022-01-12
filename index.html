@@ -9,6 +9,7 @@
           integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="css/general.css">
     <script src="js/location.js"></script>
+    <script src="js/routeStuff.js"></script>
     <title>Openbaar VerToer</title>
 
 </head>
@@ -17,21 +18,44 @@
 <div id="overlay" class="overlay">
     <div class="loader"></div>
 </div>
+<div id="bus-route-overlay" onclick="closeBusRouteOverlay()" class="overlay" style="background-color:white;cursor:pointer;">
+    <h2>Instructies voor de bus route</h2>
+    <h3>Fase 1</h3>
+    <p>Neem bus 999999 naar halte Vogelzang - Oostakker</p>
+    <h3>Fase 2</h3>
+    <p>Neem bus 999999 naar Scheldeoord</p>
+    <h3>Fase 3</h3>
+    <p>Neem bus 999999 naar Macharius</p>
+
+    <a class="btn btn-info" onclick="closeBusRouteOverlay()">Sluit instructies</a>
+</div>
+
+<div id="bike-route-overlay" onclick="closeBikeRouteOverlay()" class="overlay" style="background-color:white;cursor:pointer;">
+    <h2>Instructies voor de fiets route</h2>
+<img style="max-width:100%;max-height:100%;" src="images/stage2/map.png">
+
+    <a class="btn btn-info" onclick="closeBikeRouteOverlay()">Sluit instructies</a>
+</div>
 
 <nav class="navbar navbar-dark" style="background-color: #5c5c5c;">
-
-    <h1>Openbaar VerToer - Belmundo 2022</h1>
+    <div>
+        <div class="float-right">
+            <a class="btn btn-secondary" onclick="showBusRoute()"><img width="50px" height="50px" src="images/bus.png"></a>
+            <a class="btn btn-secondary" onclick="showBikeRoute()"><img width="50px" height="50px" src="images/fiets.png"></a>
+        </div>
+        <div><h1>Openbaar VerToer - Belmundo 2022</h1></div>
+    </div>
 </nav>
 
 <div class="instructions"><p>Welkom op het GPS-spel van Openbaar VerToer ter gelegenheid van Belmundo 2022!</p>
     <ul>
-        <li>Indien u de gegidste toer wilt volgen, hoeft u hier niet te zijn</li>
-        <li>Indien u het gps-spel met de bus wil spelen, kan u steeds op het busje rechts bovenaan tikken, om route
+        <li>Indien je de gegidste toer wilt volgen, hoef je hier niet te zijn.</li>
+        <li>Indien je het gps-spel met de bus wil spelen, kan je steeds op het busje rechts bovenaan tikken, om route
             instructies te verkrijgen.
         </li>
-        <li>Indien u het gps-spel met de fiets of te voet wil spelen, kan u steeds op het fietsje bovenaan tikken, om
-            route instructies te verkrijgen. Bemerk dat dit dezelfde route als de bus is, en dat u te voet mogelijks
-            onvoldoende tijd heeft om alle standjes te bezichtigen.
+        <li>Indien je het gps-spel met de fiets of te voet wil spelen, kan je steeds op het fietsje bovenaan tikken, om
+            route instructies te verkrijgen. Bemerk dat dit dezelfde route als de bus is, en dat je te voet mogelijks
+            onvoldoende tijd hebt om alle standjes te bezichtigen.
         </li>
     </ul>
 
@@ -45,7 +69,8 @@
     <div id="jeBentKlaar" style="display:none"><p>Ja, je bent aan de bushalte, klaar om te vertrekken!</p>
 
     </div>
-    <div id="jeBentNietKlaar" style="display:none" class="alert-warning"><p>Als je dit ziet, werkt je GPS, maar sta je nog niet op de juiste
+    <div id="jeBentNietKlaar" style="display:none" class="alert-warning"><p>Als je dit ziet, werkt je GPS, maar sta je
+        nog niet op de juiste
         plaats om te vertrekken</p></div>
 
     <br><br>
@@ -72,13 +97,6 @@
     document.getElementById("jeBentNietKlaar").style.display = "block";
     }
     }
-
-
-
-
-
-
-
 
 
 </script>
