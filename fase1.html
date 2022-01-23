@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/image-grid.css">
     <script src="database/stage1.js"></script>
     <script src="js/location.js"></script>
+    <script src="js/location_bg.js"></script>
     <script src="js/imageStuff.js"></script>
     <title>Openbaar VerToer Fase 1</title>
 </head>
@@ -39,6 +40,20 @@ function showMap(){
 document.getElementById("overlayImage").src = "images/stage2/map.png";
 document.getElementById("locationChecker").style.display = "none";
 document.getElementById("imageOverlay").style.display = "block";
+}
+
+var locInterval;
+    locInterval = setInterval('areWeThereYet()',10000);
+
+function areWeThereYet(){
+atLocationWithRadius_bg(51.02726, 3.70923, 0.001, areWeThere);
+}
+
+function areWeThere(weAre){
+if(weAre){
+alert("Volgende halte afstappen!");
+clearInterval(locInterval);
+}
 }
 
 
