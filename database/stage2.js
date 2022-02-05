@@ -1,87 +1,102 @@
 var locationsNew = [
     {
       "id": "2-1",
-      "found": true,
+      "found": false,
+      "unlocked": false,
       "image":"images/stage2/1.jpg",
       "coords": {
-        "lat": 50.96095,
-        "long": 3.73303
-      }
+         "lat": 51.06582,
+         "long": 3.75357
+      },
+      "message": "Wist je dat er op Vlaams niveau beslist is om meer dan 5000 bushaltes te schrappen?<br><br>Niet te geloven!"
     },
     {
       "id": "2-2",
       "found": false,
+      "unlocked": false,
       "image":"images/stage2/2.jpg",
       "coords": {
-        "lat": 50.95588,
-        "long": 3.72517
-      }
+        "lat": 51.07329,
+        "long": 3.76783
+      },
+      "message": ""
     },    {
       "id": "2-3",
       "found": false,
+      "unlocked": false,
       "image":"images/stage2/3.jpg",
       "coords": {
-        "lat": 50.95241,
-        "long": 3.73033
-      }
+        "lat": 51.05077,
+        "long": 3.73713
+      },
+      "message": ""
     },    {
       "id": "2-4",
       "found": false,
+      "unlocked": false,
       "image":"images/stage2/4.jpg",
       "coords": {
-        "lat": 50.96256,
-        "long": 3.73832
-      }
+        "lat": 51.05020,
+        "long": 3.73772
+      },
+             "message": ""
     },    {
       "id": "2-5",
       "found": false,
+      "unlocked": false,
       "image":"images/stage2/5.jpg",
       "coords": {
-        "lat": 50.95946,
-        "long": 3.75124
-      }
+        "lat": 51.07256,
+        "long": 3.76124
+      },
+             "message": ""
     },    {
       "id": "2-6",
       "found": false,
+      "unlocked": false,
       "image":"images/stage2/6.jpg",
       "coords": {
-        "lat": 50.95541,
-        "long": 3.72600
-      }
+        "lat": 51.05076,
+        "long": 3.74060
+      },
+             "message": ""
     },    {
       "id": "2-7",
       "found": false,
+      "unlocked": false,
       "image":"images/stage2/7.jpg",
       "coords": {
-        "lat": 50.95239,
-        "long": 3.73068
-      }
+        "lat": 51.05407,
+        "long": 3.73981
+      },
+             "message": ""
     },    {
       "id": "2-8",
       "found": false,
+      "unlocked": false,
       "image":"images/stage2/8.jpg",
       "coords": {
-        "lat": 50.95932,
-        "long": 3.72907
-      }
+        "lat": 51.07120,
+        "long": 3.75673
+      },
+             "message": ""
     },    {
       "id": "2-9",
       "found": false,
-      "image":"images/stage2/9.jpg",
+      "unlocked": false,
+      "image":"images/stage1/9.jpg",
       "coords": {
-        "lat": 50.95625,
-        "long": 3.74357
-      }
+        "lat": 51.05916,
+        "long": 3.74520
+      },
+             "message": ""
     }
   ];
 
-   var stageId = "fase2";
-   var locations = JSON.parse(window.localStorage.getItem(stageId));
-locations[0].found = true;
-   if(!locations){
-       locations = locationsNew;
-   }
+var accuracy = 0.0005;
+var stageId = "fase2";
+var locations = JSON.parse(window.localStorage.getItem(stageId));
 
-var order = [3,0,7,1,5,2,6,8,4];
-
-var bgImg = "url('images/stage2/hansenjasmien.jpg')";
+if(!locations){
+    locations = locationsNew;
+}

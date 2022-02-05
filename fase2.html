@@ -8,27 +8,16 @@
           integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/image-grid.css">
-    <script src="database/stage1.js"></script>
+    <script src="database/stage2.js"></script>
     <script src="js/location.js"></script>
     <script src="js/location_bg.js"></script>
     <script src="js/imageStuff.js"></script>
     <script src="js/routeStuff.js"></script>
-    <title>Openbaar VerToer Fase 1</title>
+    <title>Openbaar VerToer Fase 2</title>
 </head>
 <body>
 <div id="overlay" class="overlay">
     <div class="loader"></div>
-</div>
-<div id="bus-route-overlay" onclick="closeBusRouteOverlay()" class="overlay" style="background-color:white;cursor:pointer;">
-    <h2>Instructies voor de bus route</h2>
-    <h3>Fase 1</h3>
-    <p>Neem bus 999999 naar halte Vogelzang - Oostakker</p>
-    <h3>Fase 2</h3>
-    <p>Neem bus 999999 naar Scheldeoord</p>
-    <h3>Fase 3</h3>
-    <p>Neem bus 999999 naar Macharius</p>
-
-    <a class="btn btn-info" onclick="closeBusRouteOverlay()">Sluit instructies</a>
 </div>
 <div id="bike-route-overlay" onclick="closeBikeRouteOverlay()" class="overlay" style="background-color:white;cursor:pointer;">
     <h2>Instructies voor de fiets route</h2>
@@ -37,7 +26,7 @@
     <a class="btn btn-info" onclick="closeBikeRouteOverlay()">Sluit instructies</a>
 </div>
 <div id="einde-fase-overlay" onclick="closeEindeFaseOverlay()" class="overlay" style="background-color:white;cursor:pointer;">
-    <h2>Afstappen! Dit is het einde van de eerste fase.</h2>
+    <h2>Dit is het einde van de tweede fase.</h2>
     <p>Je hebt <span id="aantal-juist"></span> van de 9 foto's gevonden!</p>
     <p>Alle foto's zijn vrij gespeeld; tik er op om de boodschap te zien.</p>
 
@@ -55,15 +44,14 @@
 <nav class="navbar navbar-dark" style="background-color: #5c5c5c;">
     <div>
         <div class="float-right">
-            <a class="btn btn-secondary" onclick="showBusRoute()"><img width="50px" height="50px" src="images/bus.png"></a>
             <a class="btn btn-secondary" onclick="showBikeRoute()"><img width="50px" height="50px" src="images/fiets.png"></a>
         </div>
-        <div><h1>Openbaar VerToer - Belmundo - Fase 1</h1></div>
+        <div><h1>Openbaar VerToer - Belmundo - Fase 2</h1></div>
     </div>
 </nav>
 
-<div class="instructions"> <p><strong>Instructies: </strong>Volg de route tot halte Vogelzang. Hou je ogen open: langs deze weg liggen de 9 afbeeldingen die je hieronder ziet.
-    Je kan de afbeeldingen uitvergroten (en terug sluiten) door er op te tikken. Alle foto's zijn te identificeren vanop de route, al zijn ze niet vanop de bus getrokken.
+<div class="instructions"> <p><strong>Instructies: </strong>Ga te voet terug langs enkele afgeschafte bushaltes. Deze fase is sowieso te voet. Klik op het fiets/wandel icoontje rechts vanboven voor de route. Hou je ogen open: langs deze weg liggen de 9 afbeeldingen die je hieronder ziet.
+    Je kan de afbeeldingen uitvergroten (en terug sluiten) door er op te tikken. Alle foto's zijn te identificeren vanop de route.
     Op het einde krijg je een score van het aantal gevonden foto's. Mis er dus zeker geen!</p>
     <p><strong>Hint:</strong> De foto's staan in willekeurige volgorde.</p>
 </div>
@@ -71,8 +59,8 @@
 </div>
 
 <div class="footer">
-    <p id="default-footer">Je bent nog niet aan het einde van deze fase.<a onclick="triggerEindeFase();" class="btn btn-warning" >Beïndig Fase 1 vroegtijdig.</a></p>
-    <a id="won-footer" href="fase2.html" class="btn btn-success" style="display:none">Ga naar fase 2</a>
+    <p id="default-footer">Je bent nog niet aan het einde van deze fase.<a onclick="triggerEindeFase();" class="btn btn-warning" >Beïndig Fase 2 vroegtijdig.</a></p>
+    <a id="won-footer" href="fase3.html" class="btn btn-success" style="display:none">Ga naar fase 3</a>
     <p><strong onclick="resetLocations();" style="color:red;">Reset</strong></p>
 </div>
 

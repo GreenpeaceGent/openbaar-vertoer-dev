@@ -11,7 +11,7 @@ var posWaiter;
 
 
 function atLocation(lati, longi, nxtFunc){
- atLocationWithRadius(lati, longi, 0.0004, nxtFunc);
+ atLocationWithRadius(lati, longi, accuracy, nxtFunc);
 
 }
 
@@ -72,4 +72,10 @@ setTimeout('positionExpired(' + time + ')', 5000);
 function positionExpired(timestamp){
  if(timestamp == mostRecentPos){
 hasRecentPosition = false;}
+}
+
+function resetLocations(){
+locations = locationsNew;
+window.localStorage.setItem(stageId, JSON.stringify(locations));
+window.location.reload();
 }
