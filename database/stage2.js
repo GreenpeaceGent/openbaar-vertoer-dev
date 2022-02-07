@@ -84,16 +84,16 @@ var locationsNew = [
       "id": "2-9",
       "found": false,
       "unlocked": false,
-      "image":"images/stage1/9.jpg",
+      "image":"images/stage2/9.jpg",
       "coords": {
-        "lat": 51.05916,
-        "long": 3.74520
+        "lat": 51.02671233989268,
+        "long":  3.709910767454892
       },
              "message": ""
     }
   ];
 
-var accuracy = 0.0005;
+var accuracy = 0.0004;
 var stageId = "fase2";
 var locations = JSON.parse(window.localStorage.getItem(stageId));
 

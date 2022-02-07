@@ -27,6 +27,7 @@ var locInterval;
     }
 
 function enlargeImage(i){
+window.onbeforeunload = function() { return "Gebruik de vorige knop om de afbeelding te sluiten."; };
 var location = locations[i];
 if(location.unlocked){
 document.getElementById("locationChecker").style.display = "none";
@@ -45,6 +46,7 @@ document.getElementById("imageOverlay").style.display = "block";
 
 function closeImageOverlay(){
 document.getElementById("imageOverlay").style.display = "none";
+window.onbeforeunload = null;
 }
 
 function checkImageLocation(i, event){
