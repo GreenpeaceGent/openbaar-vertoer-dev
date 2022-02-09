@@ -37,7 +37,7 @@
     <a class="btn btn-info" onclick="closeBikeRouteOverlay()">Sluit instructies</a>
 </div>
 <div id="einde-fase-overlay" onclick="closeEindeFaseOverlay()" class="overlay" style="background-color:white;cursor:pointer;">
-    <h2>Afstappen! Dit is het einde van de eerste fase.</h2>
+    <h2>Afstappen! Dit is het einde van de derde fase.</h2>
     <p>Je hebt <span id="aantal-juist"></span> van de 9 foto's gevonden!</p>
     <p>Alle foto's zijn vrij gespeeld; tik er op om de boodschap te zien.</p>
 
@@ -89,9 +89,16 @@
 
 
 function startAreWeThereYet(){
-atLocationWithRadius_bg(51.07735, 3.76673, 0.003, areWeNearTheEnd);
+atLocationWithRadius_bg(51.04767787732025, 3.7474358793229148, 0.003, areWeNearMinneplein);
+atLocationWithRadius_bg(51.04906519226547, 3.7385113999048496, 0.002, areWeNearTheEnd);
 }
-
+var alertedMinneplein = false;
+function areWeNearMinneplein(weAre){
+    if(weAre && !alertedMinneplein){
+        alertedMinneplein = true;
+        alert("Indien je de bus neemt en het 6 maart is, kan je aan de volgende halte afstappen en onze infostand rond elktrificatie en deelmobiliteit bezoeken. Op een ander moment kan je op deze bus blijven zitten.");
+    }
+}
 </script>
 </body>
 </html>

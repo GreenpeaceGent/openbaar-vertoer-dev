@@ -19,7 +19,8 @@
 <div id="overlay" class="overlay">
     <div class="loader"></div>
 </div>
-<div id="bus-route-overlay" onclick="closeBusRouteOverlay()" class="overlay" style="background-color:white;cursor:pointer;">
+<div id="bus-route-overlay" onclick="closeBusRouteOverlay()" class="overlay"
+     style="background-color:white;cursor:pointer;">
     <h2>Instructies voor de bus route</h2>
     <h3>Fase 1</h3>
     <p>Neem bus 999999 naar halte Vogelzang - Oostakker</p>
@@ -30,13 +31,15 @@
 
     <a class="btn btn-info" onclick="closeBusRouteOverlay()">Sluit instructies</a>
 </div>
-<div id="bike-route-overlay" onclick="closeBikeRouteOverlay()" class="overlay" style="background-color:white;cursor:pointer;">
+<div id="bike-route-overlay" onclick="closeBikeRouteOverlay()" class="overlay"
+     style="background-color:white;cursor:pointer;">
     <h2>Instructies voor de fiets route</h2>
     <img style="max-width:100%;max-height:100%;" src="images/stage2/map.png">
 
     <a class="btn btn-info" onclick="closeBikeRouteOverlay()">Sluit instructies</a>
 </div>
-<div id="einde-fase-overlay" onclick="closeEindeFaseOverlay()" class="overlay" style="background-color:white;cursor:pointer;">
+<div id="einde-fase-overlay" onclick="closeEindeFaseOverlay()" class="overlay"
+     style="background-color:white;cursor:pointer;">
     <h2>Afstappen! Dit is het einde van de eerste fase.</h2>
     <p>Je hebt <span id="aantal-juist"></span> van de 9 foto's gevonden!</p>
     <p>Alle foto's zijn vrij gespeeld; tik er op om de boodschap te zien.</p>
@@ -46,7 +49,7 @@
 <div id="imageOverlay" onclick="closeImageOverlay()" class="overlay">
     <img id="overlayImage" src="">
     <a id="locationChecker" class="btn btn-warning">Check locatie</a>
-    <div id="informatie"  style="display:none; color:#FFFFFF; margin-bottom:40px;">
+    <div id="informatie" style="display:none; color:#FFFFFF; margin-bottom:40px;">
         <div id="info-message"></div>
 
     </div>
@@ -57,13 +60,15 @@
     <div>
         <div class="float-right">
             <a class="btn btn-secondary" onclick="showBusRoute()"><img width="50px" height="50px" src="images/bus.png"></a>
-            <a class="btn btn-secondary" onclick="showBikeRoute()"><img width="50px" height="50px" src="images/fiets.png"></a>
+            <a class="btn btn-secondary" onclick="showBikeRoute()"><img width="50px" height="50px"
+                                                                        src="images/fiets.png"></a>
         </div>
         <div><h1>Openbaar VerToer - Belmundo - Fase 1</h1></div>
     </div>
 </nav>
 
-<div class="instructions"> <p><strong>Instructies: </strong>Volg de route tot halte Vogelzang. Hou je ogen open: langs deze weg liggen de 9 afbeeldingen die je hieronder ziet.
+<div class="instructions"><p><strong>Instructies: </strong>Volg de route tot halte Vogelzang. Hou je ogen open: langs
+    deze weg liggen de 9 afbeeldingen die je hieronder ziet.
     Alle foto's zijn te identificeren vanop de route, al zijn ze niet vanop de bus getrokken.
     Op het einde krijg je een score van het aantal gevonden foto's. Mis er dus zeker geen!</p>
     <p><strong>Route: </strong> Zie bus/fietser/wandelaar knop rechts bovenaan.</p>
@@ -71,16 +76,21 @@
     <ul>
         <li>Klik op een foto om te vergroten.</li>
         <li>Klik op 'Check locatie' indien je denkt op de plaats van die foto te zijn.</li>
-        <li>Tik eender waar op het scherm, om de afbeelding of bericht terug te sluiten. GEBRUIK NOOIT DE VORIGE KNOP</li>
-        <li>Je krijgt een bericht of het juist is, en wat meer informatie over openbaar vervoer indien het correct is.</li>
-    </ul></p>
+        <li>Tik eender waar op het scherm, om de afbeelding of bericht terug te sluiten. GEBRUIK NOOIT DE VORIGE KNOP
+        </li>
+        <li>Je krijgt een bericht of het juist is, en wat meer informatie over openbaar vervoer indien het correct is.
+        </li>
+    </ul>
+    </p>
     <p><strong>Hint:</strong> De foto's staan in willekeurige volgorde.</p>
 </div>
 <div class="grid-container" id="imageGrid">
 </div>
 
 <div class="footer">
-    <p id="default-footer">Je bent nog niet aan het einde van deze fase.<a onclick="triggerEindeFase();" class="btn btn-warning" >Beïndig Fase 1 vroegtijdig.</a></p>
+    <p id="default-footer">Je bent nog niet aan het einde van deze fase.<a onclick="triggerEindeFase();"
+                                                                           class="btn btn-warning">Beïndig Fase 1
+        vroegtijdig.</a></p>
     <a id="won-footer" href="fase2.html" class="btn btn-success" style="display:none">Ga naar fase 2</a>
     <p><strong onclick="resetLocations();" style="color:red;">Reset</strong></p>
 </div>
@@ -89,8 +99,19 @@
 
 
 function startAreWeThereYet(){
-atLocationWithRadius_bg(51.07735, 3.76673, 0.003, areWeNearTheEnd);
+    atLocationWithRadius_bg(51.07735953394975, 3.766665202354416, 0.003, areWeNearTheEnd);
+    atLocationWithRadius_bg(51.05072841855826, 3.7407883092551613, 0.003, areWeNearKasteellaan);
 }
+var alertedKasteellaan = false;
+function areWeNearKasteellaan(weAre){
+    if(weAre && !alertedKasteellaan){
+        alertedKasteellaan = true;
+        alert("Indien je de bus neemt, afstappen aan de volgende halte 'Gent Eendrachtstraat'.");
+    }
+}
+
+
+
 
 </script>
 </body>
