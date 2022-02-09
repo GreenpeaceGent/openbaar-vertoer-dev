@@ -8,7 +8,7 @@ var locationsNew = [
          "lat": 51.06582,
          "long": 3.75357
       },
-      "message": "Wist je dat er op Vlaams niveau beslist is om meer dan 5000 bushaltes te schrappen?<br><br>Niet te geloven!"
+      "message": "placeholder"
     },
     {
       "id": "1-2",
@@ -19,7 +19,7 @@ var locationsNew = [
         "lat": 51.07329,
         "long": 3.76783
       },
-      "message": ""
+      "message": "placeholder"
     },    {
       "id": "1-3",
       "found": false,
@@ -29,7 +29,7 @@ var locationsNew = [
         "lat": 51.05077,
         "long": 3.73713
       },
-      "message": ""
+      "message": "Wist je dat er op Vlaams niveau beslist is om meer dan 5000 bushaltes te schrappen?<br><br>Niet te geloven!"
     },    {
       "id": "1-4",
       "found": false,
@@ -39,7 +39,7 @@ var locationsNew = [
         "lat": 51.05020,
         "long": 3.73772
       },
-             "message": ""
+             "message": "placeholder"
     },    {
       "id": "1-5",
       "found": false,
@@ -49,7 +49,7 @@ var locationsNew = [
         "lat": 51.07256,
         "long": 3.76124
       },
-             "message": ""
+             "message": "placeholder"
     },    {
       "id": "1-6",
       "found": false,
@@ -59,7 +59,7 @@ var locationsNew = [
         "lat": 51.05076,
         "long": 3.74060
       },
-             "message": ""
+             "message": "placeholder"
     },    {
       "id": "1-7",
       "found": false,
@@ -69,7 +69,7 @@ var locationsNew = [
         "lat": 51.05407,
         "long": 3.73981
       },
-             "message": ""
+             "message": "placeholder"
     },    {
       "id": "1-8",
       "found": false,
@@ -79,7 +79,7 @@ var locationsNew = [
         "lat": 51.07120,
         "long": 3.75673
       },
-             "message": ""
+             "message": "placeholder"
     },    {
       "id": "1-9",
       "found": false,
@@ -89,7 +89,7 @@ var locationsNew = [
         "lat": 51.05916,
         "long": 3.74520
       },
-             "message": ""
+             "message": "placeholder"
     }
   ];
 

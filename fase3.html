@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/image-grid.css">
+    <script src="database/stage3.js"></script>
+    <script src="js/location.js"></script>
+    <script src="js/location_bg.js"></script>
+    <script src="js/imageStuff.js"></script>
+    <script src="js/routeStuff.js"></script>
+    <title>Openbaar VerToer Fase 3</title>
+</head>
+<body>
+<div id="overlay" class="overlay">
+    <div class="loader"></div>
+</div>
+<div id="bus-route-overlay" onclick="closeBusRouteOverlay()" class="overlay" style="background-color:white;cursor:pointer;">
+    <h2>Instructies voor de bus route</h2>
+    <h3>Fase 1</h3>
+    <p>Neem bus 999999 naar halte Vogelzang - Oostakker</p>
+    <h3>Fase 2</h3>
+    <p>Neem bus 999999 naar Scheldeoord</p>
+    <h3>Fase 3</h3>
+    <p>Neem bus 999999 naar Macharius</p>
+
+    <a class="btn btn-info" onclick="closeBusRouteOverlay()">Sluit instructies</a>
+</div>
+<div id="bike-route-overlay" onclick="closeBikeRouteOverlay()" class="overlay" style="background-color:white;cursor:pointer;">
+    <h2>Instructies voor de fiets route</h2>
+    <img style="max-width:100%;max-height:100%;" src="images/stage2/map.png">
+
+    <a class="btn btn-info" onclick="closeBikeRouteOverlay()">Sluit instructies</a>
+</div>
+<div id="einde-fase-overlay" onclick="closeEindeFaseOverlay()" class="overlay" style="background-color:white;cursor:pointer;">
+    <h2>Afstappen! Dit is het einde van de eerste fase.</h2>
+    <p>Je hebt <span id="aantal-juist"></span> van de 9 foto's gevonden!</p>
+    <p>Alle foto's zijn vrij gespeeld; tik er op om de boodschap te zien.</p>
+
+    <a class="btn btn-info" onclick="closeEindeFaseOverlay()">Sluit deze boodschap</a>
+</div>
+<div id="imageOverlay" onclick="closeImageOverlay()" class="overlay">
+    <img id="overlayImage" src="">
+    <a id="locationChecker" class="btn btn-warning">Check locatie</a>
+    <div id="informatie"  style="display:none; color:#FFFFFF; margin-bottom:40px;">
+        <div id="info-message"></div>
+
+    </div>
+    <p style="color:#CCCCCC;">Tik eender waar om terug te sluiten. <strong>Gebruik niet de vorige knop!</strong></p>
+</div>
+
+<nav class="navbar navbar-dark" style="background-color: #5c5c5c;">
+    <div>
+        <div class="float-right">
+            <a class="btn btn-secondary" onclick="showBusRoute()"><img width="50px" height="50px" src="images/bus.png"></a>
+            <a class="btn btn-secondary" onclick="showBikeRoute()"><img width="50px" height="50px" src="images/fiets.png"></a>
+        </div>
+        <div><h1>Openbaar VerToer - Belmundo - Fase 3</h1></div>
+    </div>
+</nav>
+
+<div class="instructions"> <p><strong>Instructies: </strong>We begeven ons nu weer richting centrum en doen een kleine omweg via Scheldeoord.  Je kent het ondertussen wel: langs deze weg liggen de 9 afbeeldingen die je hieronder ziet.
+    Alle foto's zijn te identificeren vanop de route, al zijn ze niet vanop de bus getrokken.
+    Op het einde krijg je een score van het aantal gevonden foto's. Mis er dus zeker geen!</p>
+    <p><strong>Route: </strong> Zie bus/fietser/wandelaar knop rechts bovenaan.</p>
+    <p><strong>Zo werkt het: </strong>
+    <ul>
+        <li>Klik op een foto om te vergroten.</li>
+        <li>Klik op 'Check locatie' indien je denkt op de plaats van die foto te zijn.</li>
+        <li>Tik eender waar op het scherm, om de afbeelding of bericht terug te sluiten. GEBRUIK NOOIT DE VORIGE KNOP</li>
+        <li>Je krijgt een bericht of het juist is, en wat meer informatie over openbaar vervoer indien het correct is.</li>
+    </ul></p>
+    <p><strong>Hint:</strong> De foto's staan in willekeurige volgorde.</p>
+</div>
+<div class="grid-container" id="imageGrid">
+</div>
+
+<div class="footer">
+    <p id="default-footer">Je bent nog niet aan het einde van deze fase.<a onclick="triggerEindeFase();" class="btn btn-warning" >Beïndig Fase 3 vroegtijdig.</a></p>
+    <p id="won-footer" style="display:none">Klaar! Bedankt om te spelen! <a href="https://www.11m.be/petitions/stop-de-massale-afschaffing-van-bushaltes" class="btn btn-success">Teken onze petitie</a></p>
+    <p><strong onclick="resetLocations();" style="color:red;">Reset</strong></p>
+</div>
+
+<script>
+
+
+function startAreWeThereYet(){
+atLocationWithRadius_bg(51.07735, 3.76673, 0.003, areWeNearTheEnd);
+}
+
+</script>
+</body>
+</html>

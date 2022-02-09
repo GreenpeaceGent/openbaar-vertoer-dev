@@ -5,10 +5,10 @@ var locationsNew = [
       "unlocked": false,
       "image":"images/stage2/1.jpg",
       "coords": {
-         "lat": 51.06582,
-         "long": 3.75357
+         "lat": 51.0703057283781,
+         "long":  3.7624012330467242
       },
-      "message": "Wist je dat er op Vlaams niveau beslist is om meer dan 5000 bushaltes te schrappen?<br><br>Niet te geloven!"
+      "message": "placeholder"
     },
     {
       "id": "2-2",
@@ -16,80 +16,80 @@ var locationsNew = [
       "unlocked": false,
       "image":"images/stage2/2.jpg",
       "coords": {
-        "lat": 51.07329,
-        "long": 3.76783
+        "lat": 51.07157707607564,
+        "long":  3.7669718286217626
       },
-      "message": ""
+      "message": "placeholder"
     },    {
       "id": "2-3",
       "found": false,
       "unlocked": false,
       "image":"images/stage2/3.jpg",
       "coords": {
-        "lat": 51.05077,
-        "long": 3.73713
+        "lat": 51.07163310476768,
+        "long":  3.76885520142914
       },
-      "message": ""
+      "message": "placeholder"
     },    {
       "id": "2-4",
       "found": false,
       "unlocked": false,
       "image":"images/stage2/4.jpg",
       "coords": {
-        "lat": 51.05020,
-        "long": 3.73772
+        "lat": 51.07735953394975,
+        "long": 3.766665202354416
       },
-             "message": ""
+             "message": "placeholder"
     },    {
       "id": "2-5",
       "found": false,
       "unlocked": false,
       "image":"images/stage2/5.jpg",
       "coords": {
-        "lat": 51.07256,
-        "long": 3.76124
+        "lat": 51.07252702189583,
+        "long":  3.766031285785109
       },
-             "message": ""
+             "message": "placeholder"
     },    {
       "id": "2-6",
       "found": false,
       "unlocked": false,
       "image":"images/stage2/6.jpg",
       "coords": {
-        "lat": 51.05076,
-        "long": 3.74060
+        "lat": 51.07366957276086,
+        "long": 3.7687873946555586
       },
-             "message": ""
+             "message": "placeholder"
     },    {
       "id": "2-7",
       "found": false,
       "unlocked": false,
       "image":"images/stage2/7.jpg",
       "coords": {
-        "lat": 51.05407,
-        "long": 3.73981
+        "lat": 51.07115977771878,
+        "long": 3.767738061987642
       },
-             "message": ""
+             "message": "placeholder"
     },    {
       "id": "2-8",
       "found": false,
       "unlocked": false,
       "image":"images/stage2/8.jpg",
       "coords": {
-        "lat": 51.07120,
-        "long": 3.75673
+        "lat": 51.07496919231733,
+        "long": 3.7675497412049057
       },
-             "message": ""
+             "message": "placeholder"
     },    {
       "id": "2-9",
       "found": false,
       "unlocked": false,
       "image":"images/stage2/9.jpg",
       "coords": {
-        "lat": 51.02671233989268,
-        "long":  3.709910767454892
+        "lat": 51.071898890596486,
+        "long":  3.7644290411768195
       },
-             "message": ""
+             "message": "placeholder"
     }
   ];
 
