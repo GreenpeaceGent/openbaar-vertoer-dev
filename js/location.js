@@ -58,6 +58,7 @@ watchId = navigator.geolocation.watchPosition(storePosition, geo_error, geo_opti
 
 function geo_error() {
   alert("Sorry, no position available.");
+  document.getElementById("overlay").style.display = "none";
 }
 
 function storePosition(position) {

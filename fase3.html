@@ -11,8 +11,8 @@
     <script src="database/stage3.js"></script>
     <script src="js/location.js"></script>
     <script src="js/location_bg.js"></script>
-    <script src="js/imageStuff.js"></script>
     <script src="js/routeStuff.js"></script>
+    <script src="js/imageStuff.js"></script>
     <title>Openbaar VerToer Fase 3</title>
 </head>
 <body>
@@ -89,7 +89,8 @@
 
 
 function startAreWeThereYet(){
-atLocationWithRadius_bg(51.04767787732025, 3.7474358793229148, 0.003, areWeNearMinneplein);
+atLocationWithRadius_bg(51.05808370826483, 3.7453514523366094, 0.002, areWeNearOverstap);
+atLocationWithRadius_bg(51.04767787732025, 3.7474358793229148, 0.002, areWeNearMinneplein);
 atLocationWithRadius_bg(51.04906519226547, 3.7385113999048496, 0.002, areWeNearTheEnd);
 }
 var alertedMinneplein = false;
@@ -97,6 +98,14 @@ function areWeNearMinneplein(weAre){
     if(weAre && !alertedMinneplein){
         alertedMinneplein = true;
         alert("Indien je de bus neemt en het 6 maart is, kan je aan de volgende halte afstappen en onze infostand rond elktrificatie en deelmobiliteit bezoeken. Op een ander moment kan je op deze bus blijven zitten.");
+    }
+}
+
+var alertedOverstap = false;
+function areWeNearOverstap(weAre){
+    if(weAre && !alertedOverstap){
+        alertedOverstap = true;
+        alert("Met de bus dien je af te stappen aan halte Gent Arenbergstraat die er bijna is! Aan de overkant stap je dan over op bus 6.");
     }
 }
 </script>

@@ -21,7 +21,7 @@ if(weAreCompleted()){
  document.getElementById("won-footer").style.display = "block";
 }else{
 var locInterval;
-    locInterval = setInterval('startAreWeThereYet()',10000);
+    locInterval = setInterval('startAreWeThereYet()',1000);
 }
 
     }

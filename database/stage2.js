@@ -19,7 +19,7 @@ var locationsNew = [
         "lat": 51.07157707607564,
         "long":  3.7669718286217626
       },
-      "message": "placeholder"
+      "message": "Lokaal actiecomité Zonder Bushalte Straat hing begin 2020 overal in de wijk dergelijke bordjes op. Via via was men te weten gekomen dat zes bushaltes in de wijken Zingemkouter en Vogelzang zouden geschrapt worden, zonder enige burgerparticipatie. Een aantal bewoners van de wijk zijn daarop een petitie gestart en verzamelden al snel meer dan 1000 handtekeningen."
     },    {
       "id": "2-3",
       "found": false,
@@ -29,7 +29,7 @@ var locationsNew = [
         "lat": 51.07163310476768,
         "long":  3.76885520142914
       },
-      "message": "placeholder"
+      "message": "Wanneer de busverbinding in de wijk geschrapt wordt, is de kortste weg naar een andere bushalte door deze wegel. Het pad is onverhard en vol met putten (plassen als het regent) en er is geen straatverlichting. Voor mensen die minder mobiel zijn, is dit absoluut geen oplossing."
     },    {
       "id": "2-4",
       "found": false,
@@ -39,7 +39,7 @@ var locationsNew = [
         "lat": 51.07735953394975,
         "long": 3.766665202354416
       },
-             "message": "placeholder"
+             "message": "Het kruispunt waaraan deze basisschool zich bevindt, is een heel gevaarlijk kruispunt ’s morgens en ’s namiddags. De straat is erg smal, er moeten fietsers, auto’s en lijnbussen door. Door intensief gebruik van de bus zou de straat veiliger kunnen worden, maar de halte hier wordt afgeschaft binnen het decreet Basisbereikbaarheid."
     },    {
       "id": "2-5",
       "found": false,
@@ -49,7 +49,7 @@ var locationsNew = [
         "lat": 51.07252702189583,
         "long":  3.766031285785109
       },
-             "message": "placeholder"
+             "message": "Hier ziet u een aanrijdbare boordsteen. Het trottoir is hier even hoog als de vloer van een bus. Door een lichte kromming in de steen kunnen bussen heel dicht bij het voetpad aanrijden, wat de kloof tussen de deur en het voetpad aanzienlijk verkleint. Boordstenen als deze zorgen ervoor dat mensen met kinderwagens, boodschappentrolleys, rollators of rolstoelen gemakkelijker kunnen in- en uitstappen. Niet alle haltes zijn met dergelijke stenen uitgerust, ze kosten namelijk 4 keer meer dan gewone boordstenen. Is het niet vreemd dat zelfs haltes waar men deze investering voor gedaan heeft geschrapt worden? De halte die zich hier bevond, is reeds afgeschaft in 2016."
     },    {
       "id": "2-6",
       "found": false,
@@ -59,7 +59,7 @@ var locationsNew = [
         "lat": 51.07366957276086,
         "long": 3.7687873946555586
       },
-             "message": "placeholder"
+             "message": "Hier bevindt zich het Centrum voor Volwassenonderwijs CVO Groeipunt. Veel studenten maken gebruik van de bushalte voor de deur. Aan deze halte hebben een aantal protestacties plaatsgevonden van lokaal actiecomité Zonder Bushalte Straat, dat ijvert voor het behoud van de lijnbus in de wijk."
     },    {
       "id": "2-7",
       "found": false,
@@ -69,7 +69,7 @@ var locationsNew = [
         "lat": 51.07115977771878,
         "long": 3.767738061987642
       },
-             "message": "placeholder"
+             "message": "De wijken die hier zonder busverbinding dreigen te vallen, tellen meer dan 5000 inwoners, waaronder veel gezinnen met kinderen. Buslijnen 38/39 bieden een uitstekende rechtstreekse verbinding met verschillende scholen in Gent en Oostakker: Edugo, Sint-Janscollege, Sint-Lievenscollege, enz."
     },    {
       "id": "2-8",
       "found": false,
@@ -79,7 +79,7 @@ var locationsNew = [
         "lat": 51.07496919231733,
         "long": 3.7675497412049057
       },
-             "message": "placeholder"
+             "message": "In 2016 werden reeds twee haltes geschrapt in de wijk, omdat de afstand tussen de haltes onderling te klein was. Het schuilhuisje staat er echter nog steeds, en wordt nu sinds een tijdje gebruikt als fietsenstalling."
     },    {
       "id": "2-9",
       "found": false,

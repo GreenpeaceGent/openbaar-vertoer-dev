@@ -11,8 +11,8 @@
     <script src="database/stage1.js"></script>
     <script src="js/location.js"></script>
     <script src="js/location_bg.js"></script>
-    <script src="js/imageStuff.js"></script>
     <script src="js/routeStuff.js"></script>
+    <script src="js/imageStuff.js"></script>
     <title>Openbaar VerToer Fase 1</title>
 </head>
 <body>
@@ -22,12 +22,19 @@
 <div id="bus-route-overlay" onclick="closeBusRouteOverlay()" class="overlay"
      style="background-color:white;cursor:pointer;">
     <h2>Instructies voor de bus route</h2>
-    <h3>Fase 1</h3>
-    <p>Neem bus 999999 naar halte Vogelzang - Oostakker</p>
-    <h3>Fase 2</h3>
-    <p>Neem bus 999999 naar Scheldeoord</p>
-    <h3>Fase 3</h3>
-    <p>Neem bus 999999 naar Macharius</p>
+    <ul>
+        <li>Wandel naar bushalte Puinstraat in de Ferdinand Lousbergkaai (150m vanaf Herberg Macharius), hou het water aan je rechter kant.</li>
+        <li>Neem de bus <strong>of</strong> wandel tot halte Eendrachtstraat</li>
+        <li><ul>
+            <li><strong>Bus: </strong> Neem bus 17 of 18 richting P+R Oostakker, stap af aan de tweede halte.
+                <ul><li>https://www.delijn.be/nl/haltes/halte/201226/Gent_Puinstraat</li></ul></li>
+            <li><strong>Wandel (550m): </strong><ul>
+                <li>Volg de Ferdinand Lousbergkaai tot aan de eerste brug, hou het water aan je rechter kant.</li>
+                <li>Sla linksaf de Kasteellaan in.</li>
+                <li>Wandel tot aan de eerste bushalte die aan de rechterkant ligt (halte Eendrachtstraat)</li></ul></li>
+        </ul></li>
+        <li></li>
+    </ul>
 
     <a class="btn btn-info" onclick="closeBusRouteOverlay()">Sluit instructies</a>
 </div>
@@ -100,7 +107,7 @@
 
 function startAreWeThereYet(){
     atLocationWithRadius_bg(51.07735953394975, 3.766665202354416, 0.003, areWeNearTheEnd);
-    atLocationWithRadius_bg(51.05072841855826, 3.7407883092551613, 0.003, areWeNearKasteellaan);
+    atLocationWithRadius_bg(51.05072841855826, 3.7407883092551613, 0.002, areWeNearKasteellaan);
 }
 var alertedKasteellaan = false;
 function areWeNearKasteellaan(weAre){
