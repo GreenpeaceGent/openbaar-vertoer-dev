@@ -51,21 +51,22 @@
     <ul>
         <li>Indien je de gegidste toer wilt volgen, hoef je hier niet te zijn.</li>
         <li>Indien je het gps-spel met de bus wil spelen, kan je steeds op het busje rechts bovenaan tikken, om route
-            instructies te verkrijgen.
+            instructies te verkrijgen. Er zit sowieso een deel wandeling in (1.7km).
         </li>
         <li>Indien je het gps-spel met de fiets of te voet wil spelen, kan je steeds op het fietsje bovenaan tikken, om
             route instructies te verkrijgen. Bemerk dat dit dezelfde route als de bus is, en dat je te voet mogelijks
-            onvoldoende tijd hebt om alle standjes te bezichtigen.
+            onvoldoende tijd hebt om alle standjes te bezichtigen. De route is ongeveer 12km.
         </li>
     </ul>
+<p>
+    Het eerste standje bevind zich vlak bij aan Herberg Macharius. Het spel begint daar.
 
-    Het eerste standje bevind zich aan Herberg Macharius. Het spel begint aan deze bushalte daar vlakbij: xxx
-
-    Klik op de knop "Ben ik aan de juiste bushalte?" hieronder om te controleren of de locatie tracking werkt. Indien je
-    een foutmelding krijgt, staan je permissies waarschijnlijk niet juist.
+    Klik op de knop "Ben ik aan Herberg Macharius?" hieronder om te controleren of de locatie tracking werkt. Indien je
+    een foutmelding krijgt, staan je permissies waarschijnlijk niet juist.</p>
+    <a target="_blank" href="https://www.11m.be/petitions/stop-de-massale-afschaffing-van-bushaltes" class="btn btn-success">Teken onze petitie</a></p>
 </div>
 <div style="margin:10px">
-    <div><a onclick="benIkKlaar()" class="btn btn-info">Ben ik aan de juiste bushalte?</a></div>
+    <div><a onclick="benIkKlaar()" class="btn btn-info">Ben ik aan Herberg Macharius?</a></div>
     <div id="jeBentKlaar" style="display:none"><p>Ja, je bent aan de bushalte, klaar om te vertrekken!</p>
 
     </div>
@@ -83,7 +84,7 @@
 
 <script>
     function benIkKlaar(){
-   atLocationWithRadius(51.052940783979615, 3.7356533664368086, 0.0004, ikBenKlaar);
+   atLocationWithRadius(51.052940783979615, 3.7356533664368086, 0.001, ikBenKlaar);
     }
 
     function ikBenKlaar(klaar){
