@@ -23,11 +23,21 @@ return won;
 }
 
 function showBusRoute(){
+if(document.getElementById("bus-route-overlay").style.display == "none"){
+document.getElementById("bike-route-overlay").style.display = "none";
 document.getElementById("bus-route-overlay").style.display = "block";
+} else {
+
+document.getElementById("bus-route-overlay").style.display = "none";}
 }
 
 function showBikeRoute(){
+if(document.getElementById("bike-route-overlay").style.display == "none"){
+document.getElementById("bus-route-overlay").style.display = "none";
 document.getElementById("bike-route-overlay").style.display = "block";
+} else {
+document.getElementById("bike-route-overlay").style.display = "none";
+}
 }
 
 function closeBusRouteOverlay(){
