@@ -1,4 +1,27 @@
 
+var locInterval;
+
+window.addEventListener("load",function(event) {
+if(weAreCompleted()){
+ document.getElementById("default-footer").style.display = "none";
+ document.getElementById("won-footer").style.display = "block";
+}else{
+    locInterval = setInterval('startAreWeThereYet()',1000);
+}
+});
+
+
+function weAreCompleted(){
+var won = true;
+for( i = 0; i < locations.length; i++){
+var location = locations[i];
+if(!location.unlocked){
+won = false;
+}
+}
+return won;
+}
+
 function showBusRoute(){
 document.getElementById("bus-route-overlay").style.display = "block";
 }

@@ -1,5 +1,5 @@
 var checkingLocationIndex;
-window.onload = function () {
+window.addEventListener("load",function(event) {
 var imageGrid =     document.getElementById("imageGrid")
 
 for( i = 0; i < locations.length; i++){
@@ -16,19 +16,13 @@ imgNode.src = location.image;
 divNode.appendChild(imgNode);
 imageGrid.appendChild(divNode);
 }
-if(weAreCompleted()){
- document.getElementById("default-footer").style.display = "none";
- document.getElementById("won-footer").style.display = "block";
-}else{
-var locInterval;
-    locInterval = setInterval('startAreWeThereYet()',1000);
-}
 
-    }
+    });
 
 function enlargeImage(i){
 window.onbeforeunload = function() { return "Gebruik de vorige knop om de afbeelding te sluiten."; };
 var location = locations[i];
+document.getElementById("resultImage").style.display = "none";
 if(location.unlocked){
 document.getElementById("locationChecker").style.display = "none";
 document.getElementById("overlayImage").style.display = "none";
@@ -58,35 +52,21 @@ atLocation(location.coords.lat,location.coords.long, areWeAtImage)
 }
 
 function areWeAtImage(weAre){
+document.getElementById("overlayImage").style.display = "none";
+document.getElementById("locationChecker").style.display = "none";
+document.getElementById("resultImage").style.display = "block";
 if(weAre){
 var location = locations[checkingLocationIndex];
 location.found = true;
 location.unlocked = true;
 window.localStorage.setItem(stageId, JSON.stringify(locations));
 document.getElementById(location.id).style.borderColor = "lime";
-document.getElementById("locationChecker").style.display = "none";
-document.getElementById("overlayImage").src = "images/correct.jpg";
+document.getElementById("resultImage").src = "images/correct.jpg";
 document.getElementById("info-message").innerHTML = location.message;
 document.getElementById("informatie").style.display = "block";
 
 } else{
-displayWrong();
+document.getElementById("resultImage").src = "images/wrong.jpg";
 }
-}
-
-function displayWrong(){
-document.getElementById("locationChecker").style.display = "none";
-document.getElementById("overlayImage").src = "images/wrong.jpg";
-}
-
-function weAreCompleted(){
-var won = true;
-for( i = 0; i < locations.length; i++){
-var location = locations[i];
-if(!location.unlocked){
-won = false;
-}
-}
-return won;
 }
 
