@@ -18,22 +18,50 @@
 <div id="overlay" class="overlay">
     <div class="loader"></div>
 </div>
-<div id="bus-route-overlay" onclick="closeBusRouteOverlay()" class="overlay" style="background-color:white;cursor:pointer;">
+<div id="bus-route-overlay"style="background-color:white;cursor:pointer;display:none">
     <h2>Instructies voor de bus route</h2>
     <h3>Fase 1</h3>
-    <p>Neem bus 999999 naar halte Vogelzang - Oostakker</p>
+    <ul>
+        <li>Wandel naar bushalte Puinstraat in de Ferdinand Lousbergkaai (150m vanaf Herberg Macharius), hou het water aan je rechter kant.</li>
+        <li>Neem de bus <strong>of</strong> wandel tot halte Eendrachtstraat
+            <ul>
+                <li><strong>Bus: </strong> Neem bus <strong>17</strong> of <strong>18</strong> richting P+R Oostakker, stap af aan de tweede halte.
+                    <ul><li><a target="_blank" href="https://www.delijn.be/nl/haltes/halte/201226/Gent_Puinstraat">Klik hier om de doorkomsten van vertrekhalte Puinstraat te zien.</a></li></ul></li>
+                <li><strong>Wandel (550m): </strong><ul>
+                    <li>Volg de Ferdinand Lousbergkaai tot aan de eerste brug, hou het water aan je rechter kant.</li>
+                    <li>Sla linksaf de Kasteellaan in.</li>
+                    <li>Wandel tot aan de eerste bushalte die aan de rechterkant ligt (halte Eendrachtstraat)</li></ul></li>
+                <li><a target="_blank" href="images/stage1/wandelingNaarKasteellaan.jpg">Toon kaartje</a> ---  <a target="_blank" href="https://www.google.com/maps/dir/Gent+Puinstraat/Gent+Eendrachtstraat/@51.0503519,3.7379653,17.09z/data=!4m14!4m13!1m5!1m1!1s0x47c3714c812e64eb:0x9c73e738b4161f76!2m2!1d3.7364056!2d51.0516995!1m5!1m1!1s0x47c376b33ff7a53d:0x8bc5ac04750fcd8b!2m2!1d3.7407986!2d51.0506173!3e0">Google Maps</a></li>
+            </ul></li>
+        <li>Neem bus <strong>70</strong>, <strong>71</strong> of <strong>72</strong> richting Oostakker tot halte Goedlevenstraat (Wegens een omleiding, rijden deze bussen tot deze halte, al is dit niet te vinden in de routeplanner van De Lijn...)
+            <ul><li><a target="_blank" href="https://www.delijn.be/nl/haltes/halte/201224/Gent_Eendrachtstraat">Klik hier om de doorkomsten van vertrekhalte Eendrachtstraat te zien.</a></li></ul></li>
+    </ul>
     <h3>Fase 2</h3>
-    <p>Neem bus 999999 naar Scheldeoord</p>
+    Te voet
     <h3>Fase 3</h3>
-    <p>Neem bus 999999 naar Macharius</p>
+    <ul>
+        <li>Je bevind je aan halte Everstraat --- <a target="_blank" href="https://www.delijn.be/nl/haltes/halte/200217/Sint-Amandsberg_Everstraat">Doorkomsten</a></li>
+        <li>Neem bus 76, 77 of 78 tot halte Van Arenbergstraat</li>
+        <li>Steek de straat over naar de halte aan de overkant</li>
+        <li>Neem bus 6 richting Watersportbaan --- <a target="_blank" href="https://www.delijn.be/nl/haltes/halte/201308/Gent_Van_Arenbergstraat">Doorkomsten halte Van Arenbergstraat</a></li>
+        <li>Op 6 maart, stap je uit aan halte Minneplein om ons standje daar de bezoeken, je kan je reis verder zetten via de volgende bus 6--- <a target="_blank" href="https://www.delijn.be/nl/haltes/halte/201231/Gent_Minneplein">Minneplein</a></li>
+        <li>Op andere momenten kan je gewoon op de bus blijven zitten.</li>
+        <li>De uiteindelijke eindhalte van bus 6 is Gent Kasteellaan --- <a target="_blank" href="https://www.google.com/maps/place/Gent+Kasteellaan/@51.048747,3.7391106,17z/data=!4m5!3m4!1s0x47c3714d2c7acf8f:0x6c23ed3758c3f3dc!8m2!3d51.0488626!4d3.7387685">Google Maps</a></li>
+        <li>Als je verder langs het water wandelt (water aan je linkerkant), kom je terug uit aan Herberg Macharius</li>
+    </ul>
 
     <a class="btn btn-info" onclick="closeBusRouteOverlay()">Sluit instructies</a>
 </div>
 
-<div id="bike-route-overlay" onclick="closeBikeRouteOverlay()" class="overlay" style="background-color:white;cursor:pointer;">
+<div id="bike-route-overlay" style="background-color:white;cursor:pointer;display:none;">
     <h2>Instructies voor de fiets route</h2>
-<img style="max-width:100%;max-height:100%;" src="images/stage2/map.png">
+    <h3>Fase 1</h3>
 
+    <h3>Fase 2</h3>
+    <ul>
+        <li><a target="_blank" href="https://www.google.com/maps/dir/51.0773859,3.7668001/51.0687627,3.7637673/@51.0738772,3.7655465,17.07z/data=!4m9!4m8!1m5!3m4!1m2!1d3.7682874!2d51.0713833!3s0x47c376e74ee26963:0x3236de1cdc098f50!1m0!3e2">Google Maps</a> </li>
+        <li><img src="images/stage2/wandelingSintAmandsberg.jpg"></li>
+    <h3>Fase 3</h3>
     <a class="btn btn-info" onclick="closeBikeRouteOverlay()">Sluit instructies</a>
 </div>
 
@@ -63,6 +91,8 @@
 
     Klik op de knop "Ben ik aan Herberg Macharius?" hieronder om te controleren of de locatie tracking werkt. Indien je
     een foutmelding krijgt, staan je permissies waarschijnlijk niet juist.</p>
+
+    <p>Het gps-spel wordt volledig in browser gespeeld. Er wordt geen informatie naar een server gestuurd ofzo. Je vooruitgang wordt op jouw apparaat opgeslagen.</p>
     <a target="_blank" href="https://www.11m.be/petitions/stop-de-massale-afschaffing-van-bushaltes" class="btn btn-success">Teken onze petitie</a></p>
 </div>
 <div style="margin:10px">
