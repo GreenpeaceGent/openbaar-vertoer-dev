@@ -22,8 +22,8 @@
 <div id="bus-route-overlay" style="background-color:white;cursor:pointer;display:none;">
     <h2>Instructies voor de bus route</h2>
     <ul>
-        <li>Je bevind je aan halte Everstraat --- <a target="_blank" href="https://www.delijn.be/nl/haltes/halte/200217/Sint-Amandsberg_Everstraat">Doorkomsten</a></li>
-        <li>Neem bus 76, 77 of 78 tot halte Van Arenbergstraat</li>
+        <li>Je bevindt je aan halte Everstraat --- <a target="_blank" href="https://www.delijn.be/nl/haltes/halte/200217/Sint-Amandsberg_Everstraat">Doorkomsten</a></li>
+        <li>Neem bus 76, 77 of 78 tot halte Van Arenbergstraat --- <a target="_blank" href="https://www.google.com/maps/place/Gent+Van+Arenbergstraat/@51.0582552,3.7443357,17.71z/data=!4m5!3m4!1s0x47c376ca1608b165:0xd611a11ad5eefd6c!8m2!3d51.0581293!4d3.7453052">Google Maps</a></li>
         <li>Steek de straat over naar de halte aan de overkant</li>
         <li>Neem bus 6 richting Watersportbaan --- <a target="_blank" href="https://www.delijn.be/nl/haltes/halte/201308/Gent_Van_Arenbergstraat">Doorkomsten halte Van Arenbergstraat</a></li>
         <li>Op 6 maart, stap je uit aan halte Minneplein om ons standje daar de bezoeken, je kan je reis verder zetten via de volgende bus 6--- <a target="_blank" href="https://www.delijn.be/nl/haltes/halte/201231/Gent_Minneplein">Minneplein</a></li>
@@ -93,9 +93,9 @@
 
 
 function startAreWeThereYet(){
-atLocationWithRadius_bg(51.05808370826483, 3.7453514523366094, 0.004, areWeNearOverstap);
-atLocationWithRadius_bg(51.04767787732025, 3.7474358793229148, 0.004, areWeNearMinneplein);
-atLocationWithRadius_bg(51.04906519226547, 3.7385113999048496, 0.003, areWeNearTheEnd);
+atLocationWithRadius_bg(51.05808370826483, 3.7453514523366094, 0.003, areWeNearOverstap);
+atLocationWithRadius_bg(51.04767787732025, 3.7474358793229148, 0.003, areWeNearMinneplein);
+atLocationWithRadius_bg(51.04906519226547, 3.7385113999048496, 0.0025, areWeNearTheEnd);
 }
 var alertedMinneplein = false;
 function areWeNearMinneplein(weAre){
