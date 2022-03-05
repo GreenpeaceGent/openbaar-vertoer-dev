@@ -29,7 +29,7 @@ var locationsNew = [
         "lat": 51.052012016588165,
         "long": 3.7362334075831285
       },
-      "message": "Deze schildering is te zien aan de muur van het lokaal dienstencentrum De Horizon. Een halte voor de deur hier zou evident moeten zijn, gezien de vele activiteiten, vooral gericht op ouderen en mensen die niet goed te been zijn.<br><br>Desondanks was men van plan om deze halte te schrappen door besparingen op De Lijn. Ondertussen is deze halte gered nadat de buurt van zich heeft laten horen en stad Gent hier voor wil betalen.<br><img style='width:100%' src='images/stage1/actieBus6Horizon.jpg'>"
+      "message": "Deze schildering is te zien aan de muur van het lokaal dienstencentrum De Horizon. Een halte voor de deur hier zou evident moeten zijn, gezien de vele activiteiten, vooral gericht op ouderen en mensen die niet goed te been zijn.<br><br>Desondanks was men van plan om deze halte te schrappen door besparingen op De Lijn. Ondertussen is deze halte gered nadat de buurt van zich heeft laten horen en stad Gent hier voor wil betalen.<br><img style='width:100%' src='images/stage1/actieBus6Horizon.JPG'>"
     },    {
       "id": "1-4",
       "found": false,

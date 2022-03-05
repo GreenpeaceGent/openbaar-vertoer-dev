@@ -89,7 +89,7 @@ var locationsNew = [
         "lat": 51.04773578821672,
         "long": 3.7476702553088272
       },
-             "message": "Hier vlakbij ligt Scheldeoord: gebouwd in 1929, en zowat de eerste sociale flats in Gent<br><br>Bushalte Minneplein ging verdwijnen, de buurt bewoners voerden actie en krijgen buurtbus 16.<br><img style='width:100%' src='images/stage3/actieBus6.jpg'>"
+             "message": "Hier vlakbij ligt Scheldeoord: gebouwd in 1929, en zowat de eerste sociale flats in Gent<br><br>Bushalte Minneplein ging verdwijnen, de buurt bewoners voerden actie en krijgen buurtbus 16.<br><img style='width:100%' src='images/stage3/actieBus6.JPG'>"
     }
   ];
 
