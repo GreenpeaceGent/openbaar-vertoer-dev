@@ -79,7 +79,7 @@ var locationsNew = [
         "lat": 51.04698785649376,
         "long": 3.7524932434058402
       },
-             "message": "<p>België lijkt volop in te zetten op elektrische wagens en niet zozeer op openbaar vervoer. De sociale en milieukosten van elektrische wagens zijn echter niet min: </p><img style='width:100%' src='images/stage3/catapa.jpg'>"
+             "message": "<p>België/Vlaanderen lijkt volop in te zetten op elektrische wagens en niet zozeer op openbaar vervoer. De sociale en milieukosten van elektrische wagens zijn echter niet min: </p><img style='width:100%' src='images/stage3/catapa.jpg'>"
     },    {
       "id": "3-9",
       "found": false,
