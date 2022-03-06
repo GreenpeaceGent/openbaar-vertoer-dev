@@ -8,7 +8,7 @@ var locationsNew = [
          "lat": 51.05708255975067,
          "long": 3.751097008181898
       },
-      "message": "Halte Forelstraat<br><br>Bus 6 ging worden afgeschaft, maar werd gered door de buurt bewoners: het wordt buurtbus 16, betaald door de STAD GENT."
+      "message": "Bus 6 ging worden afgeschaft, maar werd gered door de buurt bewoners: het wordt buurtbus 16, betaald door de STAD GENT."
     },
     {
       "id": "3-2",

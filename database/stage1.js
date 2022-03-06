@@ -79,7 +79,7 @@ var locationsNew = [
         "lat": 51.07120,
         "long": 3.75673
       },
-             "message": "Deze halte wordt de nieuwe eindhalte van huidige lijnen 38/39. Daardoor valt de volledige wijk tussen hier en Oostakker Lourdes zonder ontsluitende busverbinding. Dat zijn alle haltes die je nog tegenkomt, behalve de eindhalte Goedlevenstraat."
+             "message": "Deze halte wordt de nieuwe eindhalte van huidige lijnen 38/39. Daardoor valt de volledige wijk tussen hier en Oostakker Lourdes zonder ontsluitende busverbinding. Dat zijn o.a. alle haltes die je nog tegenkomt, behalve de eindhalte Goedlevenstraat."
     },    {
       "id": "1-9",
       "found": false,
